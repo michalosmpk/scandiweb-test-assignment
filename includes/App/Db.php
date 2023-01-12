@@ -13,8 +13,8 @@ class Db
 	protected function connect(): \mysqli
 	{
 		$this->servername = "localhost";
-		$this->username = "root";
-		$this->password = "";
+		$this->username = "username";
+		$this->password = "password";
 		$this->dbname = "scandiweb";
 
 		$conn = new \mysqli($this->servername, $this->username, $this->password, $this->dbname);
