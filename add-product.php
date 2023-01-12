@@ -73,7 +73,7 @@
 
 				<!-- // * SWITCH SECTIONS -->
 				<!-- DVD -->
-				<div id="DVD" class="switch-section" aria-current="true">
+				<div class="switch-section" aria-current="true">
 					<p class="switch-section__instruction">Please, provide size</p>
 					<div class="form-input-tile">
 						<p>Size (MB)</p>
@@ -82,7 +82,7 @@
 				</div>
 				
 				<!-- Book -->
-				<div id="Book" class="switch-section" aria-current="false">
+				<div class="switch-section" aria-current="false">
 					<p class="switch-section__instruction">Please, provide weight</p>
 					<div class="form-input-tile">
 						<p>Weight (KG)</p>
@@ -91,7 +91,7 @@
 				</div>
 
 				<!-- Furniture -->
-				<div id="Furniture" class="switch-section" aria-current="false">
+				<div class="switch-section" aria-current="false">
 					<p class="switch-section__instruction">Please, provide dimensions</p>
 					<div class="form-input-tile">
 						<p>Height (CM)</p>
