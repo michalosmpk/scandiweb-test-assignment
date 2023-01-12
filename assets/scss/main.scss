@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+$pink: #f194b4;
+$yellow: #ffb100;
+$pale: #ffebc6;
+$green: #006c67;
+$black: #151515;
+
+body, html, .form-main {
+	width: 100%;
+	min-height: calc(100vh);
+	height: 100%;
+	background: $pale;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+// make arrows disappear in input type number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+header {
+	height: 100px;
+	background-color: $black;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: space-between; 
+	color: rgb(229, 229, 229);
+	gap: 10px;
+	.buttons {
+		display: flex;
+		gap: 20px;
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			background-color: $pink;
+			border: 0;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+			color: rgb(48, 48, 48);
+			&:hover {
+				color: rgb(0, 0, 0);
+				background-color: rgb(255, 242, 218);
+				transform: scale(1.07);
+			}
+		}
+	}
+}
+
+section {
+	min-height: calc(calc(100%) - calc(200px));
+	padding: 50px;
+	box-sizing: border-box;
+	color: #151515;
+	width: 100%;
+}
+.product-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+	position: relative;
+	.item {
+		// max-width: 220px;
+		width: 100%;
+		box-sizing: border-box;
+		height: 200px;
+		padding: 20px;
+		background-color: $yellow;
+		border-radius: 20px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		p {
+			text-transform: capitalize;
+		}
+		.delete-checkbox {
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			left: 15px;
+			top: 15px;
+		}
+	}
+}
+
+.add-product {
+	display: grid;
+	gap: 20px;
+	.switch-section {
+		display: grid;
+		gap: 20px;
+		&__instruction {
+			font-size: 20px;
+		}
+	}
+	.form-input-tile {
+		display: flex;
+		flex-direction: column;
+		max-width: 400px;
+		font-size: 20px;
+		select, input {
+			font-size: 20px;
+			padding: 15px;
+			border: 0;
+			margin-top: 10px;
+		}
+		input {
+			padding: 15px;
+			border: 0;
+		}
+		input:focus {
+			outline: none;
+		}
+	}
+}
+
+
+footer {
+	bottom: 0;
+	height: 100px;
+	display: grid;
+	place-items: center;
+	background-color: $green;
+	color: rgb(229, 229, 229);
+}
+
+@media screen and (min-width: 700px) {
+	.product-list {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product-list {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.product-list {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.product-list {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
