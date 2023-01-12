@@ -12,7 +12,6 @@ return array(
     'App\\Product\\Operations\\ValidateSku' => $baseDir . '/includes/App/Product/Operations/ValidateSku.php',
     'App\\Product\\Product' => $baseDir . '/includes/App/Product/Product.php',
     'App\\Product\\Products' => $baseDir . '/includes/App/Product/Products.php',
-    'App\\Product\\View\\ViewProductTypes' => $baseDir . '/includes/App/Product/View/ViewProductTypes.php',
     'App\\Product\\View\\ViewProducts' => $baseDir . '/includes/App/Product/View/ViewProducts.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

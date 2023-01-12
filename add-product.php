@@ -65,9 +65,9 @@
 				<div class="form-input-tile">
 					<p>Type Switcher</p>
 					<select name="product_type" id="productType">
-						<option id="#DVD" selected="selected" value="1">DVD</option>
-						<option id="#Book" value="2">BOOK</option>
-						<option id="#Furniture" value="3">FURNITURE</option>
+						<option id="DVD" selected="selected" value="1">DVD</option>
+						<option id="Book" value="2">BOOK</option>
+						<option id="Furniture" value="3">FURNITURE</option>
 					</select>
 				</div>
 
