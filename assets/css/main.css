@@ -83,28 +83,28 @@ section {
       left: 15px;
       top: 15px; }
 
-.add-product {
+.add-product main {
   display: grid;
   gap: 20px; }
-  .add-product .switch-section {
+  .add-product main .switch-section {
     display: grid;
     gap: 20px; }
-    .add-product .switch-section__instruction {
+    .add-product main .switch-section__instruction {
       font-size: 20px; }
-  .add-product .form-input-tile {
+  .add-product main .form-input-tile {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     font-size: 20px; }
-    .add-product .form-input-tile select, .add-product .form-input-tile input {
+    .add-product main .form-input-tile select, .add-product main .form-input-tile input {
       font-size: 20px;
       padding: 15px;
       border: 0;
       margin-top: 10px; }
-    .add-product .form-input-tile input {
+    .add-product main .form-input-tile input {
       padding: 15px;
       border: 0; }
-    .add-product .form-input-tile input:focus {
+    .add-product main .form-input-tile input:focus {
       outline: none; }
 
 footer {

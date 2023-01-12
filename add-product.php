@@ -49,64 +49,65 @@
 
 		<!-- // * content -->
 		<section class="add-product">
-			<div class="form-input-tile">
-				<p>SKU</p>
-				<input type="text" id="sku" name="sku" placeholder="SKU" aria-disabled="false" maxlength="255" data-numeric="false">
-			</div>
-			<div class="form-input-tile">
-				<p>Name</p>
-				<input type="text" id="name" name="name" placeholder="Product name" aria-disabled="false" maxlength="255" data-numeric="false">
-			</div>
-			<div class="form-input-tile">
-				<p>Price ($)</p>
-				<input type="text" id="price" name="price" placeholder="9.99" aria-disabled="false" data-numeric="true">
-			</div>
-			<div class="form-input-tile">
-				<p>Type Switcher</p>
-				<select name="product_type" id="productType">
-					<?php
-						$options = new App\Product\View\ViewProductTypes;
-						$options->getAllProductTypesSelect();
-					?>
-				</select>
-			</div>
+			<main>
+				<div class="form-input-tile">
+					<p>SKU</p>
+					<input type="text" id="sku" name="sku" placeholder="SKU" aria-disabled="false" maxlength="255" data-numeric="false">
+				</div>
+				<div class="form-input-tile">
+					<p>Name</p>
+					<input type="text" id="name" name="name" placeholder="Product name" aria-disabled="false" maxlength="255" data-numeric="false">
+				</div>
+				<div class="form-input-tile">
+					<p>Price ($)</p>
+					<input type="text" id="price" name="price" placeholder="9.99" aria-disabled="false" data-numeric="true">
+				</div>
+				<div class="form-input-tile">
+					<p>Type Switcher</p>
+					<select name="product_type" id="productType">
+						<?php
+							$options = new App\Product\View\ViewProductTypes;
+							$options->getAllProductTypesSelect();
+						?>
+					</select>
+				</div>
 
-			<!-- // * SWITCH SECTIONS -->
-			<!-- DVD -->
-			<div id="DVD" class="switch-section" aria-current="true">
-				<p class="switch-section__instruction">Please, provide size</p>
-				<div class="form-input-tile">
-					<p>Size (MB)</p>
-					<input type="text" id="size" name="attributes[1]" placeholder="700" data-numeric="true" aria-disabled="false">
+				<!-- // * SWITCH SECTIONS -->
+				<!-- DVD -->
+				<div id="DVD" class="switch-section" aria-current="true">
+					<p class="switch-section__instruction">Please, provide size</p>
+					<div class="form-input-tile">
+						<p>Size (MB)</p>
+						<input type="text" id="size" name="attributes[1]" placeholder="700" data-numeric="true" aria-disabled="false">
+					</div>
 				</div>
-			</div>
-			
-			<!-- Book -->
-			<div id="Book" class="switch-section" aria-current="false">
-				<p class="switch-section__instruction">Please, provide weight</p>
-				<div class="form-input-tile">
-					<p>Weight (KG)</p>
-					<input type="text" id="weight" name="attributes[2]" placeholder="20" data-numeric="true" aria-disabled="true">
+				
+				<!-- Book -->
+				<div id="Book" class="switch-section" aria-current="false">
+					<p class="switch-section__instruction">Please, provide weight</p>
+					<div class="form-input-tile">
+						<p>Weight (KG)</p>
+						<input type="text" id="weight" name="attributes[2]" placeholder="20" data-numeric="true" aria-disabled="true">
+					</div>
 				</div>
-			</div>
 
-			<!-- Furniture -->
-			<div id="Furniture" class="switch-section" aria-current="false">
-				<p class="switch-section__instruction">Please, provide dimensions</p>
-				<div class="form-input-tile">
-					<p>Height (CM)</p>
-					<input type="text" id="height" name="attributes[3][height]" placeholder="20" data-numeric="true" aria-disabled="true">
+				<!-- Furniture -->
+				<div id="Furniture" class="switch-section" aria-current="false">
+					<p class="switch-section__instruction">Please, provide dimensions</p>
+					<div class="form-input-tile">
+						<p>Height (CM)</p>
+						<input type="text" id="height" name="attributes[3][height]" placeholder="20" data-numeric="true" aria-disabled="true">
+					</div>
+					<div class="form-input-tile">
+						<p>Width (CM)</p>
+						<input type="text" id="width" name="attributes[3][width]" placeholder="10" data-numeric="true" aria-disabled="true">
+					</div>
+					<div class="form-input-tile">
+						<p>Length (CM)</p>
+						<input type="text" id="length" name="attributes[3][length]" placeholder="20" data-numeric="true" aria-disabled="true">
+					</div>
 				</div>
-				<div class="form-input-tile">
-					<p>Width (CM)</p>
-					<input type="text" id="width" name="attributes[3][width]" placeholder="10" data-numeric="true" aria-disabled="true">
-				</div>
-				<div class="form-input-tile">
-					<p>Length (CM)</p>
-					<input type="text" id="length" name="attributes[3][length]" placeholder="20" data-numeric="true" aria-disabled="true">
-				</div>
-			</div>
-
+			</main>
 		</section>
 	
 		<!-- // * footer -->

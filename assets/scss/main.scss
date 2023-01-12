@@ -104,32 +104,34 @@ section {
 }
 
 .add-product {
-	display: grid;
-	gap: 20px;
-	.switch-section {
+	main {
 		display: grid;
 		gap: 20px;
-		&__instruction {
+		.switch-section {
+			display: grid;
+			gap: 20px;
+			&__instruction {
+				font-size: 20px;
+			}
+		}
+		.form-input-tile {
+			display: flex;
+			flex-direction: column;
+			max-width: 400px;
 			font-size: 20px;
-		}
-	}
-	.form-input-tile {
-		display: flex;
-		flex-direction: column;
-		max-width: 400px;
-		font-size: 20px;
-		select, input {
-			font-size: 20px;
-			padding: 15px;
-			border: 0;
-			margin-top: 10px;
-		}
-		input {
-			padding: 15px;
-			border: 0;
-		}
-		input:focus {
-			outline: none;
+			select, input {
+				font-size: 20px;
+				padding: 15px;
+				border: 0;
+				margin-top: 10px;
+			}
+			input {
+				padding: 15px;
+				border: 0;
+			}
+			input:focus {
+				outline: none;
+			}
 		}
 	}
 }

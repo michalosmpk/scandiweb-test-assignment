@@ -39,9 +39,7 @@
 		<section class="product-list">
 			<?php
 				$products = new App\Product\View\ViewProducts();
-				// $products = new App\Product\View\ViewProducts();
 				$products->showAllProducts();
-				// printar(get_included_files());
 			?>
 		</section>
 	
