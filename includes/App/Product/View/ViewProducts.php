@@ -14,7 +14,7 @@ class ViewProducts extends \App\Product\Products
 					<p><?=$product->getSku()?></p>
 					<p><?=$product->getName()?></p>
 					<p>$<?=$product->getPrice()?></p>
-					<p><?=$product->getAttributeName().': '.$product->getAttributeValue()?></p>
+					<p><?=$product->getAttributeName() . ": " . $product->getAttributeValue() . $product->getAttributeUnit()?></p>
 				</div> 
 				<?php
 			}

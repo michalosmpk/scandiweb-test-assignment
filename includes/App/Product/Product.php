@@ -11,7 +11,8 @@ class Product
 		protected string $name,
 		protected string $price,
 		protected string $attributeName,
-		protected string $attributeValue
+		protected string $attributeValue,
+		protected string $attributeUnit
 	) {}
 	
 	// * id
@@ -83,6 +84,18 @@ class Product
 	public function setAttributeValue(string $attributeValue): self 
 	{
 		$this->attributesValue = $attributesValue;
+		return $this;
+	}
+
+	// * attribute unit
+	public function getAttributeUnit(): string 
+	{
+		return $this->attributeUnit;
+	}
+
+	public function setAttributeUnit(string $attributeUnit): self 
+	{
+		$this->attributesUnit = $attributesUnit;
 		return $this;
 	}
 

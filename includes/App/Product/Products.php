@@ -6,7 +6,7 @@ class Products extends \App\Db
 {
 	protected function getAllProducts(): array|null
 	{
-		$sql = "SELECT product_id, sku, product_name, price, attribute_name, attribute_value 
+		$sql = "SELECT product_id, sku, product_name, price, attribute_name, attribute_value, attribute_unit 
 				FROM product_list
 				INNER JOIN product_type ON product_list.type_id = product_type.type_id
 				ORDER BY product_list.product_id;";
@@ -14,7 +14,7 @@ class Products extends \App\Db
 		$numRows = $result->num_rows;
 		if ($numRows > 0) {
 			while ($row = $result->fetch_assoc()) {
-				$productList[] = new Product($row['product_id'], $row['sku'], $row['product_name'], $row['price'], $row['attribute_name'], $row['attribute_value']);
+				$productList[] = new Product($row['product_id'], $row['sku'], $row['product_name'], $row['price'], $row['attribute_name'], $row['attribute_value'], $row['attribute_unit']);
 			}
 			return $productList;
 		}

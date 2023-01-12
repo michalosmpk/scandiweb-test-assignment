@@ -1,4 +1,4 @@
 test
 node_modules
 package-lock.json
-indludes/App/Db.php
+./indludes/App/Db.php
