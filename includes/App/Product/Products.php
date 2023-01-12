@@ -38,18 +38,18 @@ class Products extends \App\Db
 		}
 	}
 
-	protected function getAllProductTypes(): array
-	{
-		$sql = "SELECT type_id, type_value FROM product_type";
-		$result = $this->connect()->query($sql);
-		$numRows = $result->num_rows;
-		if ($numRows > 0) {
-			while ($row = $result->fetch_assoc()) {
-				$types[] = $row;
-			}
-			return $types;
-		}
-	}
+	// protected function getAllProductTypes(): array
+	// {
+	// 	$sql = "SELECT type_id, type_value FROM product_type";
+	// 	$result = $this->connect()->query($sql);
+	// 	$numRows = $result->num_rows;
+	// 	if ($numRows > 0) {
+	// 		while ($row = $result->fetch_assoc()) {
+	// 			$types[] = $row;
+	// 		}
+	// 		return $types;
+	// 	}
+	// }
 
 	protected function addProduct(string $sku, string $name, string $price, string $typeId, string $attributeValue): void
 	{
